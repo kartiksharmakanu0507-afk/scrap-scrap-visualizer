@@ -116,7 +116,7 @@ export function ZoneTwo() {
       <div className="gateway-label">REST API<br />Gateway</div>
       <div className="pool-card">
         <h3>POOLING LOGIC</h3>
-        <div className="pool-graphic"><span>🚚</span><span>🚚</span><span>🚚</span><b>➜</b><span>📦</span></div>
+        <div className="pool-graphic"><Truck /><Truck /><Truck /><b>➜</b><Boxes /></div>
         <p>Lot collection &<br />combine</p>
       </div>
       <ArchitectureConnector className="z2-mobile-arrow" d="M0 10 H75 Q94 10 94 35 V95" />
@@ -137,8 +137,8 @@ export function ZoneThree() {
       <ZoneHeader zone="ZONE 3:" title="APPLICATION & CORE LOGIC" icon={Wrench} tone="blue" />
       <h2 className="module-title">FastAPI modules</h2>
       <div className="gateway-stack">
-        <span className="key-symbol">🔑</span><small>Authentication</small>
-        <span className="python-symbol">🐍</span>
+        <ShieldCheck className="key-symbol" /><small>Authentication</small>
+        <CodeXml className="python-symbol" />
         <strong>REST API<br />Gateway<br />[Python<br />FastAPI<br />Server]</strong>
       </div>
       <div className="module-stack">
@@ -222,7 +222,7 @@ export function ZoneFive() {
 
 const tech: Array<[LucideIcon | null, string, string]> = [
   [null, "◢", "FLUTTER"], [null, "🪶", "SQLite"], [Gauge, "", "FASTAPI"],
-  [null, "🐍", "PYTHON"], [Database, "", "POSTGRESQL"], [null, "◉", "PYTORCH"],
+  [CodeXml, "", "PYTHON"], [Database, "", "POSTGRESQL"], [null, "◉", "PYTORCH"],
   [MapPin, "", "MAPS API"], [null, "◭", "UPI"], [Bell, "", "PUSH\nNOTIFICATIONS"],
 ];
 
